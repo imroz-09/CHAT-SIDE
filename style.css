@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffe6ea;
+}
+
+/* Main chat container */
+.chat-container {
+    width: 420px;
+    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+                url("background.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.chat-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ff6f91;
+    letter-spacing: 2px;
+}
+
+/* Message display area */
+#messages {
+    height: 300px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 15px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border: 2px dashed #ffb6c1;
+}
+
+/* Individual message bubble */
+#messages div {
+    background: #fff0f5;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: fit-content;
+    max-width: 80%;
+    color: #555;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Input area */
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+/* Text input */
+#msgInput {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 30px;
+    border: 2px solid #ffb6c1;
+    outline: none;
+    background: #fff;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input placeholder */
+#msgInput::placeholder {
+    color: #ff9aa2;
+}
+
+/* SEND button */
+#sendBtn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #ff6f91;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+/* Hover effect */
+#sendBtn:hover {
+    background: #ff4f7b;
+    transform: scale(1.05);
+}
+
+/* Scrollbar styling */
+#messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background: #ffb6c1;
+    border-radius: 10px;
+}
