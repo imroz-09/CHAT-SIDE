@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CODTECH Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include font-awesome for send icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <h2>CHAT-SIDE</h2>
+
+    <div id="messages"></div>
+
+    <div class="chat-input">
+        <input id="msgInput" type="text" placeholder="Type your message...">
+        <button id="sendBtn">SEND</button>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
